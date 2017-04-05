@@ -1,0 +1,85 @@
+@import "imports"
+
+.home
+  position: absolute
+  top: 0
+  z-index: 1
+
+  //first block
+  &-welcome
+    background: $darkest-color url('../img/foresting-cloud-forests.jpg') center center fixed no-repeat
+    background-size: cover
+
+    animation: zoom 45s infinite
+
+    width: 100vw
+    height: 100vh
+
+    display: flex
+    align-items: center
+    justify-content: center
+
+    text-align: center
+    color: $color1
+
+    &--text
+      h3
+        font-size: 6rem
+        text-transform: uppercase
+        font-weight: bolder
+        font-family: $big-titles-font
+      h1
+        font-size: 5rem
+        margin-top: 30px
+        line-height: 130%
+        font-weight: bolder
+      h2
+        font-family: $big-titles-font
+        text-transform: lowercase
+        font-size: 4rem
+        line-height: 135%
+
+      .social-bar
+        margin-top: 40px
+        display: flex
+        justify-content: space-around
+        padding: 0 50px
+        .social-link
+          width: 30px
+          height: auto
+          &:hover
+            background-color: $lightest-color
+            border-radius: 100px
+            background-size: 90%
+        #linkedin-logo:hover path
+          fill: $linkedin-color
+        #twitter-logo:hover path
+          fill: $twitter-color
+        #github-logo:hover path
+          fill: $darkest-color
+        #pinterest-logo:hover path
+          fill: $pinterest-color
+
+    &--arrow
+      position: relative
+      top: 15vh
+      #arrow-down
+        width: 50px
+        height: auto
+        &:hover
+          width: 60px
+          transition: .4s
+
+  //secon block : presentation
+  &-presentation
+    background-color: $color1
+    height: 80vh
+    padding: 10vh 5vw
+    &--left
+      padding: 0 80px
+      .small-title
+        height: 70px
+        width: auto
+        border: $color4 3px solid
+        h2
+          color: $color4

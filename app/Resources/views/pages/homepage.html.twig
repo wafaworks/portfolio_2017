@@ -1,5 +1,40 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <h1>SUP GUYS</h1>
+    <div class="home">
+        <div class="container-fluid home-welcome">
+            <div class="row">
+                <div class="col-md-12 home-welcome--text">
+                    <h3><span class="bg-text">hello !</span></h3>
+                    <h1><span class="bg-text">I'm Wafa Adjeroudi</span></h1>
+                    <h2><span class="bg-text">Web Designer - Web Integrator</span></h2>
+                    <div class="social-bar">
+                        <a href="#"><img id="linkedin-logo" class="svg social-link" src="{{ asset('assets/img/linkedin.svg') }}"></a>
+                        <a href="#"><img id="twitter-logo" class="svg social-link" src="{{ asset('assets/img/twitter.svg') }}"></a>
+                        <a href="#"><img id="github-logo" class="svg social-link" src="{{ asset('assets/img/github.svg') }}"></a>
+                        <a href="#"><img id="pinterest-logo" class="svg social-link" src="{{ asset('assets/img/pinterest.svg') }}"></a>
+                    </div>
+                </div>
+                <div class="col-md-12 home-welcome--arrow">
+                    <a href=""><img id="arrow-down" class="svg" src="{{ asset('assets/img/arrow-down.svg') }}"></a>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid home-presentation">
+            <div class="row">
+                <div class="col-md-6 col-xs-12 home-presentation--left ">
+                    <div class="small-title perfect-center">
+                        <h2>Quick Presentation</h2>
+                    </div>
+                    <p>
+                        The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps.
+                        Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymph.
+                    </p>
+                </div>
+                <div class="col-md-6 col-xs-12 home-presentation--right">
+
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}

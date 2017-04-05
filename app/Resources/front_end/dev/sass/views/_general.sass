@@ -1,0 +1,34 @@
+@import "imports"
+
+
+body
+  max-width: 100vw
+  min-height: 100vh
+
+a
+  text-decoration: none
+  &:hover
+    cursor: pointer
+  &:active, &:focus, &:hover, &:visited
+    text-decoration: none
+
+h1
+  font-family: $big-titles-font
+
+h2
+  font-family: $small-titles-font
+  text-transform: uppercase
+  color: $lightest-color
+
+p
+  font-family: $paragraphs-font
+
+.shadow
+  box-shadow: 10 10 40 $darkest-color-transparency
+
+.perfect-center
+  display: flex
+  align-items: center
+  justify-content: center
+
+

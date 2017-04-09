@@ -29,3 +29,40 @@ jQuery('img.svg').each(function(){
     }, 'xml');
 
 });
+
+/*
+ * Smooth scrolling
+ */
+
+function scrollNav() {
+    $('.nav a').click(function(){
+        //Toggle Class
+        $(".active").removeClass("active");
+        $(this).closest('li').addClass("active");
+        var theClass = $(this).attr("class");
+        $('.'+theClass).parent('li').addClass('active');
+        //Animate
+        $('html, body').stop().animate({
+            scrollTop: $( $(this).attr('href') ).offset().top - 160
+        }, 400);
+        return false;
+    });
+    $('.scrollTop a').scrollTop();
+}
+scrollNav();
+
+
+/*
+ * Word auto changing every 2 sec
+ */
+
+$(function(){
+    words = ["lettering", "music", "movies", "animals", "meditation"];
+    count = 0;
+    setInterval(function () {
+        count++;
+        $(".word-auto-change").fadeOut(400, function () {
+            $(this).text(words[count % words.length]).fadeIn(400);
+        })
+    }, 2000);
+});

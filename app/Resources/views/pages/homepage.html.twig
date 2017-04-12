@@ -2,10 +2,17 @@
 
 {% block body %}
     <div class="home">
+
         <div class="container-fluid home-welcome">
             <div class="row">
                 <div class="col-md-12 home-welcome--text">
                     <h1>Hello ! <br> I'm Wafa Adjeroudi <br> Web Integrator and UX Designer Jr <br> In love with <span class="word-auto-change bg-text">lettering</span></h1>
+                    <div class="social-bar">
+                        <a href="#"><img id="linkedin-logo" class="svg social-link" src="{{ asset('assets/img/linkedin.svg') }}"></a>
+                        <a href="#"><img id="twitter-logo" class="svg social-link" src="{{ asset('assets/img/twitter.svg') }}"></a>
+                        <a href="#"><img id="github-logo" class="svg social-link" src="{{ asset('assets/img/github.svg') }}"></a>
+                        <a href="#"><img id="pinterest-logo" class="svg social-link" src="{{ asset('assets/img/pinterest.svg') }}"></a>
+                    </div>
                 </div>
                 <div class="col-md-12 home-welcome--arrow perfect-center">
                     <a href="#about-me"><img id="arrow-down" class="svg" src="{{ asset('assets/img/arrow-down.svg') }}"></a>
@@ -24,20 +31,101 @@
                     <p>
                         The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps.
                         Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymph.
+                        The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps.
+                        Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymph.
+                        The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps.
+                        Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymph.
                     </p>
                 </div>
                 <div class="col-md-6 col-xs-12 home-presentation--right perfect-center">
                     <div class="row mozaic">
-                        <div class="col-sm-6 pictures" id="top-left"><figure><img src="{{ asset('assets/img/elephant.jpg') }}"></figure></div>
-                        <div class="col-sm-6 pictures" id="top-right"><figure><img src="{{ asset('assets/img/macbookpro.jpg') }}"></figure></div>
-                        <div class="col-sm-6 pictures" id="bottom-left"><figure><img src="{{ asset('assets/img/lettering.jpg') }}"></figure></div>
-                        <div class="col-sm-6 pictures" id="bottom-right"><figure><img src="{{ asset('assets/img/woods.jpg') }}"></figure></div>
+                        <div class="col-sm-6 pictures" id="top-left">
+                            <figure><img src="{{ asset('assets/img/elephant.jpg') }}"></figure>
+                            <div class="text">
+                                <h2>Heading 01</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                            </div>
+                            <div class="overlay" id="hover-color1"></div>
+                        </div>
+                        <div class="col-sm-6 pictures" id="top-right">
+                            <figure><img src="{{ asset('assets/img/macbookpro.jpg') }}"></figure>
+                            <div class="text">
+                                <h2>Heading 01</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                            </div>
+                            <div class="overlay" id="hover-color2"></div>
+                        </div>
+                        <div class="col-sm-6 pictures" id="bottom-left">
+                            <figure><img src="{{ asset('assets/img/lettering.jpg') }}"></figure>
+                            <div class="text">
+                                <h2>Heading 01</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                            </div>
+                            <div class="overlay" id="hover-color3"></div>
+                        </div>
+                        <div class="col-sm-6 pictures" id="bottom-right">
+                            <figure><img src="{{ asset('assets/img/woods.jpg') }}"></figure>
+                            <div class="text">
+                                <h2>Heading 01</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                            </div>
+                            <div class="overlay" id="hover-color4"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="container-fluid home-competences">
-
+            <div class="row">
+                <div class="col-md-12 home-competences--title">
+                    <div class="title-border perfect-center">
+                        <h2>competences</h2>
+                    </div>
+                </div>
+                <div class="col-md-12 separator perfect-center">
+                    <img class="svg" src="{{ asset('assets/img/waves.svg') }}">
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 home-competences--elements">
+                    <img class="svg" src="{{ asset('assets/img/ux-apps.svg') }}">
+                    <br>
+                    <span>UX expertise</span>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 home-competences--elements">
+                    <img class="svg" src="{{ asset('assets/img/webdesign.svg') }}">
+                    <br>
+                    <span>Graphics and Design</span>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 home-competences--elements">
+                    <img class="svg" src="{{ asset('assets/img/web-integration.svg') }}">
+                    <br>
+                    <span>Web Integration</span>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 home-competences--elements">
+                    <img class="svg" src="{{ asset('assets/img/web-development.svg') }}">
+                    <br>
+                    <span>back-end logic</span>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid home-work" id="work">
+            <div class="row">
+                <div class="col-md-6 col-xs-12 home-work--left">
+                    <a href="#" class="">
+                        <figure><img src="{{ asset('assets/img/neoxi-laptop-mockup.jpg') }}"></figure>
+                        <div class="text">
+                            <h2>Neoxi</h2>
+                        </div>
+                        <div class="overlay" id="hover-color2"></div>
+                    </a>
+                    <a>
+                        <figure><img src="{{ asset('assets/img/foodandyou-mobile-mockup.jpg') }}"></figure>
+                        <div class="text">
+                            <h2>Food&You</h2>
+                        </div>
+                        <div class="overlay" id="hover-color2"></div>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 {% endblock %}

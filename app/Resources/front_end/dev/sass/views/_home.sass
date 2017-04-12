@@ -7,14 +7,11 @@
 
   //first block
   &-welcome
-    background: $darkest-color url('../img/foresting-cloud-forests.jpg') center center fixed no-repeat
+    background: $color3 url('../img/foresting-cloud-forests.jpg') center center fixed no-repeat
     background-size: cover
-
     animation: zoom 45s infinite
-
     width: 100vw
     height: 100vh
-
     display: flex
     align-items: center
     justify-content: center
@@ -22,6 +19,7 @@
 
     &--text
       .social-bar
+        display: none
         margin-top: 20px
         a
           padding-right: 30px
@@ -57,26 +55,28 @@
   &-presentation
     background-color: $color1
     padding: 10vh 5vw
-    width: 100vw
+    max-width: 100vw
     &--left
       padding: 0 80px
       .small-title
         height: 70px
         width: auto
-        border: $color4 3px solid
+        border: $color4 2px solid
         h2
           color: $color4
-      .separator
-        .svg
-          width: 100px
       p
         font-size: 1.8rem
     &--right
-      padding: 0 80px
       .mozaic
         width: 550px
       .pictures
-        padding-bottom: 20px
+        width: 250px
+        height: 250px
+        padding: 0
+        margin: 2%
+        position: relative
+        overflow: hidden
+        transition: all 0.3s ease-out
         figure
           width: 250px
           height: 250px
@@ -84,19 +84,90 @@
           padding: 0
           background: #fff
           overflow: hidden
-          &:hover+span
-            bottom: -36px
-            opacity: 1
           img
             width: 250px
             -webkit-transform: rotate(0) scale(1)
             transform: rotate(0) scale(1)
-            &:hover
-              -webkit-transform: rotate(15deg) scale(1.4)
-              transform: rotate(15deg) scale(1.4)
-              -webkit-transition: .3s ease-in-out
-              transition: .5s ease-in-out
+            transition-duration: .4s
+            transition-delay: .4s
+        .text   // this is the block we use to have text when hovering it
+          color: #fff
+          margin: 0
+          position: absolute
+          top: 30%
+          text-align: center
+          text-transform: uppercase
+          z-index: 20
+          padding: 0 10%
+          transition-duration: .4s
+          transition-delay: .4s
+          opacity: 0
+          h2
+            font-size: 20px
+            border-bottom: 3px solid white
+            margin-bottom: 10px
+        .overlay    // this is the block we use to put color in when hovering it
+          position: absolute
+          top: 0
+          left: 0
+          width: 100%
+          height: 100%
+          z-index: 10
+          opacity: 0
+          transition: opacity 0.15s ease-out
+          transition-duration: .4s
+          transition-delay: .4s
+          backface-visibility: hidden
+        #hover-color1
+          background-color: $color4
+        #hover-color2
+          background-color: $color2
+        #hover-color3
+          background-color: $color5
+        #hover-color4
+          background-color: $color3
 
-  //third block - comptences
+        &:hover, &:focus
+          figure +span
+            bottom: -36px
+            opacity: 1
+          img
+            -webkit-transform: rotate(15deg) scale(1.4)
+            transform: rotate(15deg) scale(1.4)
+            -webkit-transition: .3s ease-in-out
+            transition: .5s ease-in-out
+          .text
+            opacity: 1
+            transition: .5s ease-in-out
+          .overlay
+            opacity: 0.6
+            transition: .5s ease-in-out
+
+
+  //third block - competences
+  &-competences
+    background: $color4 url('../img/mokeups.jpg') fixed no-repeat
+    background-size: cover
+    text-align: center
+    &--title
+      .title-border
+        height: 70px
+        width: auto
+        border: $lightest-color 2px solid
+    .separator
+      .svg path
+        fill: $lightest-color
+    &--elements
+      margin: auto
+      .svg
+        width: 100px
+        height: 88px
+      span
+        color: $lightest-color
+        font-family: $paragraphs-font
+        font-weight: bold
+        text-transform: uppercase
+
+
 
 

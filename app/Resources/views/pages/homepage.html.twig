@@ -7,15 +7,14 @@
             <div class="row">
                 <div class="col-md-12 home-welcome--text">
                     <h1>Hello ! <br> I'm Wafa Adjeroudi <br> Web Integrator and UX Designer Jr <br> In love with <span class="word-auto-change bg-text">lettering</span></h1>
+                </div>
+                <div class="col-md-12 home-welcome--social perfect-center">
                     <div class="social-bar">
                         <a href="#"><img id="linkedin-logo" class="svg social-link" src="{{ asset('assets/img/linkedin.svg') }}"></a>
                         <a href="#"><img id="twitter-logo" class="svg social-link" src="{{ asset('assets/img/twitter.svg') }}"></a>
                         <a href="#"><img id="github-logo" class="svg social-link" src="{{ asset('assets/img/github.svg') }}"></a>
                         <a href="#"><img id="pinterest-logo" class="svg social-link" src="{{ asset('assets/img/pinterest.svg') }}"></a>
                     </div>
-                </div>
-                <div class="col-md-12 home-welcome--arrow perfect-center">
-                    <a href="#about-me"><img id="arrow-down" class="svg" src="{{ asset('assets/img/arrow-down.svg') }}"></a>
                 </div>
             </div>
         </div>
@@ -104,37 +103,43 @@
             </div>
         </div>
 
-        <div class="container-fluid home-work" id="work">
+        <div class="container-fluid home-work">
             <div class="row">
-                <div class="col-md-12 home-work--intro">
+                <div class="col-md-12 home-work--intro" id="work">
                     <h2>Projects I've recently worked on</h2>
-                    <p>These are the three real web projects I worked on recently. Actually I don't have much experience but I really
+                    <p>These are the three real web projects I worked on recently. <br> Actually I don't have much experience but I really
                         intend to progress and at the same time bring my creativity and reflexion on project I'll be working on.
                     </p>
                 </div>
                 <div class="col-md-12 home-work--projects">
                     <div class="row">
-                        <div class="col-md-4 col-xs-6">
-                            <img src="{{ asset('assets/img/foodandyou-ecommerce.jpg') }}">
-                            <div class="text">
-                                <h2>Food&You - E-commerce Website</h2>
+                        <a href="">
+                            <div class="col-md-4 col-sm-12 brand perfect-center">
+                                <figure><img src="{{ asset('assets/img/foodandyou-ecommerce.jpg') }}"></figure>
+                                <div class="text">
+                                    <h2>Food&You <br> -  <br> E-commerce Website</h2>
+                                </div>
+                                <div class="overlay" id="project1"></div>
                             </div>
-                            <div class="overlay"></div>
-                        </div>
-                        <div class="col-md-4 col-xs-6">
-                            <img src="{{ asset('assets/img/foodandyou-landingpage.jpg') }}">
-                            <div class="text">
-                                <h2>Food&You - Landing Page</h2>
+                        </a>
+                        <a>
+                            <div class="col-md-4 col-sm-12 brand">
+                                <figure><img src="{{ asset('assets/img/foodandyou-landingpage.jpg') }}"></figure>
+                                <div class="text">
+                                    <h2>Food&You <br> - <br> Landing Page</h2>
+                                </div>
+                                <div class="overlay" id="project2"></div>
                             </div>
-                            <div class="overlay"></div>
-                        </div>
-                        <div class="col-md-4 col-xs-6">
-                            <img src="{{ asset('assets/img/neoxi-society.jpg') }}">
-                            <div class="text">
-                                <h2>Neoxi - Static Website + "Blog"</h2>
+                        </a>
+                        <a href="">
+                            <div class="col-md-4 col-sm-12 brand">
+                                <figure><img src="{{ asset('assets/img/neoxi-society.jpg') }}"></figure>
+                                <div class="text">
+                                    <h2>Neoxi <br> - <br> Showcase Website</h2>
+                                </div>
+                                <div class="overlay" id="project3"></div>
                             </div>
-                            <div class="overlay"></div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>

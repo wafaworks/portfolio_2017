@@ -1,5 +1,148 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <h1>SUP GUYS</h1>
+    <div class="home">
+
+        <div class="container-fluid home-welcome">
+            <div class="row">
+                <div class="col-md-12 home-welcome--text">
+                    <h1>Hello ! <br> I'm Wafa Adjeroudi <br> Web Integrator and UX Designer Jr <br> In love with <span class="word-auto-change bg-text">lettering</span></h1>
+                </div>
+                <div class="col-md-12 home-welcome--social perfect-center">
+                    <div class="social-bar">
+                        <a href="#"><img id="linkedin-logo" class="svg social-link" src="{{ asset('assets/img/linkedin.svg') }}"></a>
+                        <a href="#"><img id="twitter-logo" class="svg social-link" src="{{ asset('assets/img/twitter.svg') }}"></a>
+                        <a href="#"><img id="github-logo" class="svg social-link" src="{{ asset('assets/img/github.svg') }}"></a>
+                        <a href="#"><img id="pinterest-logo" class="svg social-link" src="{{ asset('assets/img/pinterest.svg') }}"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid home-presentation" id="about-me">
+            <div class="row presentation-content">
+                <div class="col-md-6 col-xs-12 home-presentation--left ">
+                    <div class="photo perfect-center">
+                        <img class="blackandwhite-animation" src="{{ asset('assets/img/wafa-adjeroudi.jpg') }}">
+                    </div>
+                    <p>
+                        Curious and enthusiastic about digital experience, I aim to be part of inspiring and innovative web or mobile projects.
+                        <br>
+                        I started studying graphic design and webmarketing, and recently decided to pursue an intensive professional training in web development at the Wild Code School of Lyon.
+                        <br>
+                        Now I have junior skills in web integrations, back-office knowledge and good skills in ux design, I can handle digital issues as a whole.
+                        <br>
+                    </p>
+                </div>
+                <div class="col-md-6 col-xs-12 home-presentation--right perfect-center">
+                    <div class="row mozaic">
+                        <div class="col-sm-6 pictures" id="top-left">
+                            <figure><img src="{{ asset('assets/img/colors.jpg') }}"></figure>
+                            <div class="text">
+                                <h2>Colorful life</h2>
+                                <p>Always trying to find inspiring colors and good combinations</p>
+                            </div>
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="col-sm-6 pictures" id="top-right">
+                            <figure><img src="{{ asset('assets/img/working-desk.jpg') }}"></figure>
+                            <div class="text">
+                                <h2>Web Experience</h2>
+                                <p>Putting myself in visitor's shoes to offer them the best experience</p>
+                            </div>
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="col-sm-6 pictures" id="bottom-left">
+                            <figure><img src="{{ asset('assets/img/lettering.jpg') }}"></figure>
+                            <div class="text">
+                                <h2>Font attitude</h2>
+                                <p>Never underestimate the impact of a good font - words can be beautiful !</p>
+                            </div>
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="col-sm-6 pictures" id="bottom-right">
+                            <figure><img src="{{ asset('assets/img/photography.jpg') }}"></figure>
+                            <div class="text">
+                                <h2>Photos obsession</h2>
+                                <p>Always seeking the perfect ones to make beautiful websites</p>
+                            </div>
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid home-competences">
+            <div class="row">
+                <div class="col-md-12 home-competences--title">
+                    <div class="title-border perfect-center">
+                        <h2>SKILLS</h2>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 home-competences--elements">
+                    <img class="svg" src="{{ asset('assets/img/ux-apps.svg') }}">
+                    <br>
+                    <span>UX expertise</span>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 home-competences--elements">
+                    <img class="svg" src="{{ asset('assets/img/webdesign.svg') }}">
+                    <br>
+                    <span>Graphics and Design</span>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 home-competences--elements">
+                    <img class="svg" src="{{ asset('assets/img/web-integration.svg') }}">
+                    <br>
+                    <span>Web Integration</span>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 home-competences--elements">
+                    <img class="svg" src="{{ asset('assets/img/web-development.svg') }}">
+                    <br>
+                    <span>back-end logic</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid home-work">
+            <div class="row">
+                <div class="col-md-12 home-work--intro" id="work">
+                    <h2>Projects I've recently worked on</h2>
+                    <p>These are the three real web projects I worked on recently. <br> Actually I don't have much experience but I really
+                        intend to progress and at the same time bring my creativity and reflexion on project I'll be working on.
+                    </p>
+                </div>
+                <div class="col-md-12 home-work--projects">
+                    <div class="row projects-content">
+                        <div class="col-md-4 col-sm-12 brand perfect-center">
+                            <figure><img src="{{ asset('assets/img/foodandyou-ecommerce.jpg') }}"></figure>
+                            <div class="text">
+                                <a href="{{ path('app_foodandyou-ecommerce') }}">
+                                    <h2>Food&You <br> -  <br> E-commerce Website</h2>
+                                </a>
+                            </div>
+                            <div class="overlay" id="project1"></div>
+                        </div>
+                        <div class="col-md-4 col-sm-12 brand">
+                            <figure><img src="{{ asset('assets/img/foodandyou-landingpage.jpg') }}"></figure>
+                            <div class="text">
+                                <a href="{{ path('app_foodandyou-landing_page') }}">
+                                    <h2>Food&You <br> - <br> Landing Page</h2>
+                                </a>
+                            </div>
+                            <div class="overlay" id="project2"></div>
+                        </div>
+                        <div class="col-md-4 col-sm-12 brand">
+                            <figure><img src="{{ asset('assets/img/neoxi-society.jpg') }}"></figure>
+                            <div class="text">
+                                <a href="{{ path('app_neoxi') }}">
+                                    <h2>Neoxi <br> - <br> Showcase Website</h2>
+                                </a>
+                            </div>
+                            <div class="overlay" id="project3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}

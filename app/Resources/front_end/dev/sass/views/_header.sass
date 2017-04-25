@@ -1,0 +1,34 @@
+@import "imports"
+
+.navbar
+  font-family: $nav-font
+  text-transform: uppercase
+  color: $lightest-color
+  background-color: transparent
+  height: 100px
+  z-index: 2
+  &-toggle
+    margin-top: 15px
+    z-index: 100
+    .icon-bar
+      background-color: $lightest-color
+      height: 5px
+      width: 30px
+      border-radius: 50px
+  &-brand
+    img
+      width: 80px
+  &-collapse
+    ul
+      margin-top: 25px
+      li
+        padding: 0 15px
+        a
+          color: $lightest-color
+          position: relative
+          &:hover, &:focus
+            background-color: transparent
+            color: $darkest-color
+            transition: .3s
+
+

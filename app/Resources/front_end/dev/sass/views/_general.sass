@@ -1,0 +1,72 @@
+@import "imports"
+
+
+body
+  max-width: 100%
+  min-height: 100%
+
+a
+  text-decoration: none
+  &:hover
+    cursor: pointer
+  &:active, &:focus, &:hover, &:visited
+    text-decoration: none
+
+h1
+  font-family: $big-titles-font
+  font-size: 5.5rem
+  color: $lightest-color
+  line-height: 150%
+
+h2
+  font-family: $small-titles-font
+  text-transform: uppercase
+  color: $lightest-color
+
+p
+  font-family: $paragraphs-font
+  text-align: justify
+
+
+.perfect-center
+  display: flex
+  align-items: center
+  justify-content: center
+
+.bg-text
+  background-color: $color3
+  padding: 0 10px
+
+.overlay    // this is the block we use to put color in when hovering it
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 10
+  opacity: 0
+  transition: opacity 0.15s ease-out
+  transition-duration: .4s
+  transition-delay: .4s
+  backface-visibility: hidden
+
+.text   // this is the block we use to have text when hovering it
+  color: #fff
+  margin: 0
+  position: absolute
+  top: 30%
+  text-align: center
+  text-transform: uppercase
+  z-index: 20
+  padding: 0 10%
+  transition-duration: .4s
+  transition-delay: .4s
+  opacity: 0
+  h2
+    font-size: 20px
+    border-bottom: 3px solid white
+  p
+    text-align: center
+
+
+

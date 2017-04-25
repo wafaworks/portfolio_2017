@@ -1,0 +1,74 @@
+@import "imports"
+
+//menu underline animation
+
+.navbar-collapse
+  a
+    &:before //setting the underline animation
+      content: ""
+      position: absolute
+      width: 100%
+      height: 2px
+      bottom: 0
+      left: 0
+      background-color: $darkest-color
+      visibility: hidden
+      -webkit-transform: scaleX(0)
+      transform: scaleX(0)
+      -webkit-transition: all 0.3s ease-in-out 0s
+      transition: all 0.3s ease-in-out 0s
+    &:hover:before
+      visibility: visible
+      -webkit-transform: scaleX(1)
+      transform: scaleX(1)
+
+
+//background zooming animation
+
+@media (min-width: 1370px) //desktop only
+
+  @keyframes zoom //using keyframes to configure zooming scale for background animation
+    0%, 100%
+      background-size: 100%
+    50%
+      background-size: 150%
+
+@media screen and (min-width: 1040px) and (max-width: 1369px)
+
+  @keyframes zoom
+    0%, 100%
+      background-size: 150%
+    50%
+      background-size: 200%
+
+@media screen and (max-width: 1039px)
+
+  @keyframes zoom
+    0%, 100%
+      background-size: 300%
+    50%
+      background-size: 350%
+
+
+//black&white picture animation
+
+.blackandwhite-animation
+  -webkit-transition: .3s ease-in-out
+  transition: .3s ease-in-out
+  &:hover
+    -webkit-filter: grayscale(80%)
+    filter: grayscale(80%)
+
+//toggle animation - hamburger transformation
+
+.navbar-toggle
+  transition: opacity .25s ease
+  &.active
+    .top
+      transform: translateY(8px) translateX(0) rotate(45deg)
+    .middle
+      opacity: 0
+    .bottom
+      transform: translateY(-10px) translateX(0) rotate(-45deg)
+  span
+    transition: all .35s ease

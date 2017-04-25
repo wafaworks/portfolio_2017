@@ -1,0 +1,176 @@
+@import "imports"
+
+//mobile only
+@media screen and (max-width: 767px)
+
+  #myNavbar
+    background-color: $color3
+    position: absolute
+    top: -5px
+    right: 0
+    left: 0
+    height: 102vh
+    padding-top: 80px
+    z-index: 50
+
+  .navbar-collapse
+    ul
+      padding: 70px
+      li
+        padding: 20px 15px
+      a
+        text-align: center
+        font-size: 2.5rem
+
+  .home-welcome
+    &--text
+      h1
+        font-size: 2.4rem
+        text-align: center
+    &--social
+      .social-bar
+        .social-link
+          width: 30px
+
+  .home-presentation
+    &--left
+      padding: 0 40px 60px 40px
+    &--right
+      .mozaic
+        margin: 0 25px
+        .pictures
+          margin: 0 auto 20px auto
+
+  .home-competences
+    padding: 15% 10%
+    background-position: center
+    &--elements
+      padding-bottom: 40px
+
+  .home-work
+    &--intro
+      p
+        padding: 30px
+    &--projects
+      .projects-content
+        padding: 0 50px
+        .brand
+          margin-bottom: 30px
+          .text
+            top: 20px
+
+  .work-title
+    h1
+      font-size: 2rem
+
+//desktop only
+
+@media (min-width: 1178px)
+
+  .home-competences--title
+    padding: 0 250px
+
+  .presentation-content
+    display: flex
+    align-items: center
+
+//big tablets - small laptops
+
+@media (min-width: 990px) and (max-width: 1178px)
+
+  .home-presentation--right
+    .pictures
+      width: 200px
+      height: 200px
+      figure
+        width: 200px
+        height: 200px
+        img
+          width: 200px
+
+  .home-competences
+    background-attachment: scroll
+    &--title
+      padding: 0 170px
+
+  .presentation-content
+    display: flex
+    align-items: center
+
+  .home-work--projects
+    .projects-content
+      .brand
+        .text
+          top: 12%
+
+//small tablets
+
+@media (min-width: 768px) and (max-width: 990px)
+
+  .home-welcome--text
+    h1
+      font-size: 5rem
+
+  .home-competences
+    background-attachment: scroll
+    &--elements
+      padding-bottom: 40px
+
+  .home-work
+    &--intro
+      p
+        padding: 30px 80px
+    &--projects
+      .brand
+        margin-bottom: 40px
+        display: flex
+        justify-content: center
+        figure
+          width: 71%
+          img
+            width: auto
+        .overlay
+          width: 71%
+          margin: 0 15%
+
+  .work-title
+    h1
+      font-size: 4rem
+
+//every media except mobile
+
+@media (min-width: 768px)
+
+  .home-competences
+    padding: 20vh 15vw
+
+
+//every media except desktop
+
+@media (max-width: 1178px)
+
+  .work-title
+    height: 20vh
+    display: flex
+    justify-content: center
+    h1
+      margin-left: inherit
+
+//to handle very small devices only
+
+@media (max-width: 320px)
+
+  .work-title
+    h1
+      font-size: 1.7rem
+
+  .navbar-collapse
+    ul
+      padding: 35px 70px
+
+  .home-work--projects
+    .projects-content
+      .brand
+        .text
+          h2
+            font-size: 3rem

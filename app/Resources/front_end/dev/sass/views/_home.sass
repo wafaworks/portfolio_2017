@@ -1,0 +1,178 @@
+@import "imports"
+
+.home
+  position: absolute
+  top: 0
+  z-index: 1
+
+  //first block
+  &-welcome
+    background: $color3 url('../img/foresting-cloud-forests.jpg') center center fixed no-repeat
+    background-size: cover
+    animation: zoom 45s infinite
+    width: 100vw
+    height: 100vh
+    display: flex
+    align-items: center
+    justify-content: center
+    text-align: justify
+
+    &--social
+      position: relative
+      top: 10vh
+      .social-bar
+        display: block
+        margin-top: 20px
+        a
+          padding-right: 30px
+        .social-link
+          width: 40px
+          height: auto
+          &:hover
+            background-color: $lightest-color
+            border-radius: 100px
+            background-size: 90%
+        #linkedin-logo:hover path
+          fill: $linkedin-color
+        #twitter-logo:hover path
+          fill: $twitter-color
+        #github-logo:hover path
+          fill: $darkest-color
+        #pinterest-logo:hover path
+          fill: $pinterest-color
+
+
+  //second block : presentation
+  &-presentation
+    background-color: $color1
+    padding: 10vh 5vw
+    max-width: 100vw
+    &--left
+      padding: 0 80px
+      .photo
+        margin-bottom: 60px
+        img
+          width: 225px
+          height: auto
+          border-radius: 200px
+      p
+        font-size: 1.8rem
+        text-align: center
+    &--right
+      .mozaic
+        width: 550px
+      .pictures
+        width: 250px
+        height: 250px
+        padding: 0
+        margin: 2%
+        position: relative
+        overflow: hidden
+        transition: all 0.3s ease-out
+        figure
+          width: 250px
+          height: 250px
+          margin: 0
+          padding: 0
+          background: #fff
+          overflow: hidden
+          img
+            width: 250px
+            -webkit-transform: rotate(0) scale(1)
+            transform: rotate(0) scale(1)
+            transition-duration: .4s
+            transition-delay: .4s
+        .overlay
+          background-color: $darkest-color
+
+        &:hover, &:focus
+          figure +span
+            bottom: -36px
+            opacity: 1
+          img
+            -webkit-transform: rotate(15deg) scale(1.4)
+            transform: rotate(15deg) scale(1.4)
+            -webkit-transition: .3s ease-in-out
+            transition: .5s ease-in-out
+          .text
+            opacity: 1
+            transition: .2s ease-in-out
+          .overlay
+            opacity: 0.6
+            transition: .2s ease-in-out
+
+
+  //third block - competences
+  &-competences
+    background: $color4 url('../img/mokeups.jpg') fixed no-repeat
+    background-size: cover
+    text-align: center
+    &--title
+      margin-bottom: 100px
+      .title-border
+        height: 70px
+        width: auto
+        border: $lightest-color 2px solid
+    &--elements
+      margin: auto
+      .svg
+        width: 100px
+        height: 88px
+        margin-bottom: 25px
+      span
+        color: $lightest-color
+        font-family: $paragraphs-font
+        font-weight: bold
+        text-transform: uppercase
+
+  //fourth block - work
+  &-work
+    background-color: $color1
+    padding: 10vh 5vw
+    max-width: 100vw
+    &--intro
+      text-align: center
+      h2
+        color: $darkest-color
+      p
+        text-align: center
+        padding: 30px 100px
+        font-size: 2rem
+    &--projects
+      .brand
+        padding: 0
+        position: relative
+        overflow: hidden
+        transition: all 0.3s ease-out
+        figure
+          width: 100%
+          height: auto
+          padding: 0
+          background: #fff
+          overflow: hidden
+          border: $color1 8px solid
+          img
+            width: 100%
+            height: auto
+        .text
+          width: 100%
+          margin: 25px 0
+          h2
+            border-bottom: 0
+            font-size: 3.5rem
+        .overlay
+          border: $color1 8px solid
+        #project1
+          background-color: $color3
+        #project2
+          background-color: $color2
+        #project3
+          background-color: $color4
+
+        &:hover, &:focus
+          .text
+            opacity: 1
+          .overlay
+            opacity: 0.9
+
+

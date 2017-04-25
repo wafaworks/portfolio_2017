@@ -1,3 +1,15 @@
 app_homepage:
     path:     /
     defaults: { _controller: AppBundle:Default:index }
+
+app_foodandyou-ecommerce:
+    path:     /work/foodandyou-ecommerce
+    defaults: { _controller: AppBundle:Default:foodandyou_ecommerce }
+
+app_foodandyou-landing_page:
+    path:     /work/foodandyou-landing_page
+    defaults: { _controller: AppBundle:Default:foodandyou_landingpage }
+
+app_neoxi:
+    path:     /work/neoxi
+    defaults: {_controller: AppBundle:Default:neoxi }

@@ -59,3 +59,16 @@
     -webkit-filter: grayscale(80%)
     filter: grayscale(80%)
 
+//toggle animation - hamburger transformation
+
+.navbar-toggle
+  transition: opacity .25s ease
+  &.active
+    .top
+      transform: translateY(8px) translateX(0) rotate(45deg)
+    .middle
+      opacity: 0
+    .bottom
+      transform: translateY(-10px) translateX(0) rotate(-45deg)
+  span
+    transition: all .35s ease

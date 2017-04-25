@@ -63,4 +63,19 @@ $(document).ready(function() {
         }
     });
 
+    /*
+     * Mobile Menu Animation
+     */
+
+    $('#toggle').click(function() {
+        $(this).toggleClass('active');
+    });
+
+    /*
+     * Closing menu when clicking on link
+     */
+
+    $('.nav a').on('click', function(){
+        $('.navbar-toggle').click(); //bootstrap 3.x by Richard
+    });
 });

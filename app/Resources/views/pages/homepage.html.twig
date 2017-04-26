@@ -1,6 +1,8 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
+    {% include 'modules/header.html.twig' %}
+
     <div class="home">
 
         <div class="container-fluid home-welcome">
@@ -141,6 +143,34 @@
                             <div class="overlay" id="project3"></div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid home-contact" id="contact">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Want to talk about an eventual collaboration ? <br>
+                        Or just have some conversation on awesome things ?
+                    </h2>
+                </div>
+                <div class="col-md-12 myEmail">
+                    <a href="mailto:wafaadjeroudi@example.com?Subject=Parlons%20Digital" target="_top"><span class="bg-text">wafaadjeroudi@gmail.com</span></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid home-inspiration">
+            <div class="row">
+                <div class="col-md-12 home-inspiration--text">
+                    <h2>There are many things which inspires me in life, and this inspiration has a real impact on
+                    the way I work and on my creativity</h2>
+                    <span class="bg-text">This section is under construction : some articles on some amazing subject are coming !</span>
+                    <p>Until then, take a look here and follow me !</p>
+                </div>
+                <div class="col-md-12 home-inspiration--socials">
+                    <a href=""><img class="svg pinterest" src="{{ asset('assets/img/pinterest-red.svg') }}"></a>
+                    <a href=""><img class="svg instagram" src="{{ asset('assets/img/instagram.svg') }}"></a>
                 </div>
             </div>
         </div>

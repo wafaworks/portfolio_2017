@@ -12,10 +12,18 @@
                 </div>
                 <div class="col-md-12 home-welcome--social perfect-center">
                     <div class="social-bar">
-                        <a href="#"><img id="linkedin-logo" class="svg social-link" src="{{ asset('assets/img/linkedin.svg') }}"></a>
-                        <a href="#"><img id="twitter-logo" class="svg social-link" src="{{ asset('assets/img/twitter.svg') }}"></a>
-                        <a href="#"><img id="github-logo" class="svg social-link" src="{{ asset('assets/img/github.svg') }}"></a>
-                        <a href="#"><img id="pinterest-logo" class="svg social-link" src="{{ asset('assets/img/pinterest.svg') }}"></a>
+                        <a href="https://www.linkedin.com/in/wafaadjeroudi/" target="_blank" title="Linkedin">
+                            <img id="linkedin-logo" alt="web development icon" class="svg social-link" src="{{ asset('assets/img/linkedin.svg') }}">
+                        </a>
+                        <a href="https://twitter.com/wafa_adjeroudi" target="_blank" title="Twitter">
+                            <img id="twitter-logo" alt="twitter logo" class="svg social-link" src="{{ asset('assets/img/twitter.svg') }}">
+                        </a>
+                        <a href="https://github.com/wafaworks" target="_blank" title="Github">
+                            <img id="github-logo" alt="github logo" class="svg social-link" src="{{ asset('assets/img/github.svg') }}">
+                        </a>
+                        <a href="https://fr.pinterest.com/wafaadj/" target="_blank" title="Pinterest">
+                            <img id="pinterest-logo" alt="pinterest logo" class="svg social-link" src="{{ asset('assets/img/pinterest.svg') }}">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -25,7 +33,7 @@
             <div class="row presentation-content">
                 <div class="col-md-6 col-xs-12 home-presentation--left ">
                     <div class="photo perfect-center">
-                        <img class="blackandwhite-animation" src="{{ asset('assets/img/wafa-adjeroudi.jpg') }}">
+                        <img class="wafa-picture" alt="wafa adjeroudi picture" title="HAPPY TO SEE YOU HERE !" src="{{ asset('assets/img/wafa-adjeroudi.jpg') }}" onmouseover="this.src='{{ asset('assets/img/wafa-adjeroudi-hover.jpg') }}'" onmouseout="this.src='{{ asset('assets/img/wafa-adjeroudi.jpg') }}'">
                     </div>
                     <p>
                         Curious and enthusiastic about digital experience, I aim to be part of inspiring and innovative web or mobile projects.
@@ -39,7 +47,7 @@
                 <div class="col-md-6 col-xs-12 home-presentation--right perfect-center">
                     <div class="row mozaic">
                         <div class="col-sm-6 pictures" id="top-left">
-                            <figure><img src="{{ asset('assets/img/colors.jpg') }}"></figure>
+                            <figure><img alt="color palette and a loop - colors illustration" src="{{ asset('assets/img/colors.jpg') }}"></figure>
                             <div class="text">
                                 <h2>Colorful life</h2>
                                 <p>Always trying to find inspiring colors and good combinations</p>
@@ -47,7 +55,7 @@
                             <div class="overlay"></div>
                         </div>
                         <div class="col-sm-6 pictures" id="top-right">
-                            <figure><img src="{{ asset('assets/img/working-desk.jpg') }}"></figure>
+                            <figure><img alt="laptop on desk - web experience illustration" src="{{ asset('assets/img/working-desk.jpg') }}"></figure>
                             <div class="text">
                                 <h2>Web Experience</h2>
                                 <p>Putting myself in visitor's shoes to offer them the best experience</p>
@@ -55,7 +63,7 @@
                             <div class="overlay"></div>
                         </div>
                         <div class="col-sm-6 pictures" id="bottom-left">
-                            <figure><img src="{{ asset('assets/img/lettering.jpg') }}"></figure>
+                            <figure><img alt="woman on computer and writing - lettering illustration" src="{{ asset('assets/img/lettering.jpg') }}"></figure>
                             <div class="text">
                                 <h2>Font attitude</h2>
                                 <p>Never underestimate the impact of a good font - words can be beautiful !</p>
@@ -63,7 +71,7 @@
                             <div class="overlay"></div>
                         </div>
                         <div class="col-sm-6 pictures" id="bottom-right">
-                            <figure><img src="{{ asset('assets/img/photography.jpg') }}"></figure>
+                            <figure><img alt="Woman holding camera - photography illustration" src="{{ asset('assets/img/photography.jpg') }}"></figure>
                             <div class="text">
                                 <h2>Photos obsession</h2>
                                 <p>Always seeking the perfect ones to make beautiful websites</p>
@@ -83,22 +91,22 @@
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-12 home-competences--elements">
-                    <img class="svg" src="{{ asset('assets/img/ux-apps.svg') }}">
+                    <img class="svg" alt="ux icon" src="{{ asset('assets/img/ux-apps.svg') }}">
                     <br>
                     <span>UX expertise</span>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-12 home-competences--elements">
-                    <img class="svg" src="{{ asset('assets/img/webdesign.svg') }}">
+                    <img class="svg" alt="webdesign icon" src="{{ asset('assets/img/webdesign.svg') }}">
                     <br>
                     <span>Graphics and Design</span>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-12 home-competences--elements">
-                    <img class="svg" src="{{ asset('assets/img/web-integration.svg') }}">
+                    <img class="svg" alt="web integration icon" src="{{ asset('assets/img/web-integration.svg') }}">
                     <br>
                     <span>Web Integration</span>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-12 home-competences--elements">
-                    <img class="svg" src="{{ asset('assets/img/web-development.svg') }}">
+                    <img class="svg" alt="web development icon" src="{{ asset('assets/img/web-development.svg') }}">
                     <br>
                     <span>back-end logic</span>
                 </div>
@@ -116,7 +124,7 @@
                 <div class="col-md-12 home-work--projects">
                     <div class="row projects-content">
                         <div class="col-md-4 col-sm-12 brand perfect-center">
-                            <figure><img src="{{ asset('assets/img/foodandyou-ecommerce.jpg') }}"></figure>
+                            <figure><img alt="restaurant meal - foodandyou project illustration" src="{{ asset('assets/img/foodandyou-ecommerce.jpg') }}"></figure>
                             <div class="text">
                                 <a href="{{ path('app_foodandyou-ecommerce') }}">
                                     <h2>Food&You <br> -  <br> E-commerce Website</h2>
@@ -125,7 +133,7 @@
                             <div class="overlay" id="project1"></div>
                         </div>
                         <div class="col-md-4 col-sm-12 brand">
-                            <figure><img src="{{ asset('assets/img/foodandyou-landingpage.jpg') }}"></figure>
+                            <figure><img alt="in the kitchen - foodandyou project illustration" src="{{ asset('assets/img/foodandyou-landingpage.jpg') }}"></figure>
                             <div class="text">
                                 <a href="{{ path('app_foodandyou-landing_page') }}">
                                     <h2>Food&You <br> - <br> Landing Page</h2>
@@ -134,7 +142,7 @@
                             <div class="overlay" id="project2"></div>
                         </div>
                         <div class="col-md-4 col-sm-12 brand">
-                            <figure><img src="{{ asset('assets/img/neoxi-society.jpg') }}"></figure>
+                            <figure><img alt="corporate tools - neoxi project illustration" src="{{ asset('assets/img/neoxi-society.jpg') }}"></figure>
                             <div class="text">
                                 <a href="{{ path('app_neoxi') }}">
                                     <h2>Neoxi <br> - <br> Showcase Website</h2>
@@ -160,17 +168,21 @@
             </div>
         </div>
 
-        <div class="container-fluid home-inspiration">
+        <div class="container-fluid home-inspiration" id="inspirations">
             <div class="row">
                 <div class="col-md-12 home-inspiration--text">
                     <h2>There are many things which inspires me in life, and this inspiration has a real impact on
                     the way I work and on my creativity</h2>
                     <span class="bg-text">This section is under construction : some articles on some amazing subject are coming !</span>
-                    <p>Until then, take a look here and follow me !</p>
+                    <p>Until then, follow these links and take a look !</p>
                 </div>
                 <div class="col-md-12 home-inspiration--socials">
-                    <a href=""><img class="svg pinterest" src="{{ asset('assets/img/pinterest-red.svg') }}"></a>
-                    <a href=""><img class="svg instagram" src="{{ asset('assets/img/instagram.svg') }}"></a>
+                    <a href="https://fr.pinterest.com/wafaadj/" target="_blank" title="Pinterest">
+                        <img class="svg pinterest" alt="Pinterest Logo" src="{{ asset('assets/img/pinterest-red.svg') }}">
+                    </a>
+                    <a href="https://500px.com/wafaadjeroudi" target="_blank" title="500px - photography">
+                        <img class="svg px-photos" alt="500px Logo" src="{{ asset('assets/img/500px.svg') }}">
+                    </a>
                 </div>
             </div>
         </div>

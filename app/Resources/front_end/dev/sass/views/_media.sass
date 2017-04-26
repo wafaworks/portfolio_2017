@@ -59,10 +59,6 @@
           .text
             top: 20px
 
-  .work-title
-    h1
-      font-size: 2rem
-
   .home-contact
     background-attachment: scroll
     h2
@@ -75,6 +71,34 @@
   .home-inspiration--text
     h2
       font-size: 2.1rem
+
+  .work-title
+    h1
+      font-size: 2rem
+
+  .work-shots
+    padding: 0
+    padding-bottom: 30px
+    .box
+      img
+        width: 300px
+
+  .project1
+    .work-shots
+      .three, .six
+        padding-bottom: 0
+
+  .project2
+    .work-shots
+      .two, .four
+        padding-bottom: 0
+      .four
+        margin-bottom: 20px
+
+  .work-mobile
+    &--mockup
+      margin-bottom: 20px
+
 
 //desktop only
 
@@ -112,6 +136,11 @@
 
   .home-contact
     background-attachment: scroll
+
+  .work-shots
+    .box
+      img
+        width: 400px
 //small tablets
 
 @media (min-width: 768px) and (max-width: 990px)
@@ -149,6 +178,15 @@
   .home-contact
     background-attachment: scroll
 
+  .work-shots
+    .box
+      img
+        width: 300px
+
+  .work-mobile
+    &--mockup
+      margin-bottom: 20px
+
 //every media except mobile
 
 @media (min-width: 768px)
@@ -182,3 +220,8 @@
         .text
           h2
             font-size: 3rem
+
+  .work-shots
+    .box
+      img
+        width: 250px

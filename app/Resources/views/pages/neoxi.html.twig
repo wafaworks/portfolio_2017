@@ -2,6 +2,41 @@
 
 {% block body %}
 
+    <div class="work project3">
 
+        <div class="container-fluid work-title" id="work-blue-color">
+            <a href="{{ path('app_homepage') }}#work">
+                <img class="svg arrow-previous" src="{{ asset('assets/img/diamond-arrow.svg') }}">
+            </a>
+            <h1>Work : Neoxi | showcase website</h1>
+        </div>
+
+        <div class="container work-shots">
+            <div class="box one">
+                <img src="{{ asset('assets/img/neoxi-home.jpg') }}">
+            </div>
+            <div class="box two">
+                <img src="{{ asset('assets/img/neoxi-actu.jpg') }}">
+            </div>
+            <div class="box three">
+                <img src="{{ asset('assets/img/neoxi-histoire.jpg') }}">
+            </div>
+        </div>
+
+        <div class="container work-mobile">
+            <div class="row">
+                <div class="col-md-4 col-xs-12 work-mobile--mockup">
+                    <img class="svg" src="{{ asset('assets/img/neoxi.svg') }}">
+                </div>
+                <div class="col-md-4 col-xs-12 work-mobile--mockup">
+                    <img class="svg" src="{{ asset('assets/img/neoxi-expert.svg') }}">
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <img class="svg" src="{{ asset('assets/img/neoxi-actu.svg') }}">
+                </div>
+            </div>
+        </div>
+
+    </div>
 
 {% endblock %}

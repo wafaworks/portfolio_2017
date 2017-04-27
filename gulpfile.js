@@ -26,14 +26,14 @@ var paths = {
     ],
     images: [
         './app/Resources/front_end/dev/sass/img/*',
-        './app/Resources/front_end/dev/sass/img/favicon/*'
+        './app/Resources/front_end/dev/sass/img/**/*'
     ],
     dist: {
         js:         './web/assets/js',
         css:        './web/assets/css',
         fonts:      './web/assets/fonts',
         assets:     './web/assets',
-        images:     './web/assets/img',
+        images:     './web/assets/img'
     }
 };
 

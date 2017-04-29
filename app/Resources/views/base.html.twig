@@ -3,18 +3,26 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% block title %}Wafa Adjeroudi : Webdesign and Web Integration{% endblock %}</title>
+    <title>{% block title %}Wafa Adjeroudi : UX Design and Web Integration{% endblock %}</title>
+    <meta name=”description” content="Hello, I'm Wafa Adjeroudi, UX Designer and Web Integrator Junior. Looking for new opportunities to get more experience and share my passion with digital.">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Integration, UX Design, Portfolio, Wafa, Adjeroudi, Lyon, Digital">
+    <meta name="author" content="Wafa Adjeroudi">
+
     <link type='text/css' href='{{ asset('assets/css/vendor.css') }}' rel='stylesheet' media='screen' />
     <link type='text/css' href='{{ asset('assets/css/app.css') }}' rel='stylesheet' media='screen' />
     {% block stylesheets %}{% endblock %}
-    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('assets/img/favicon/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('assets/img/favicon/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/img/favicon/favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ asset('assets/img/favicon/manifest.json') }}">
+    <link rel="mask-icon" href="{{ asset('assets/img/favicon/safari-pinned-tab.svg') }}" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+
 </head>
 <body>
-{% include 'modules/header.html.twig' %}
 
 {% block body %}{% endblock %}
-
-{% include 'modules/footer.html.twig' %}
 
 <script src="{{ asset('assets/js/vendor.js') }}"></script>
 <script src="{{ asset('assets/js/app.js') }}"></script>

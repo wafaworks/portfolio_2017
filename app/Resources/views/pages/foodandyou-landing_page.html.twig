@@ -5,7 +5,39 @@
     <div class="work project2">
 
         <div class="container-fluid work-title" id="work-pink-color">
-            <h1>Work : Food&You | landing page</h1>
+            <a href="{{ path('app_homepage') }}#work">
+                <img class="svg arrow-previous" src="{{ asset('assets/img/diamond-arrow.svg') }}">
+            </a>
+            <h1>Food&You | landing page</h1>
+        </div>
+
+        <div class="container work-shots">
+            <div class="box one">
+                <img src="{{ asset('assets/img/foodandyou-onepage.jpg') }}">
+            </div>
+            <div class="box two">
+                <img src="{{ asset('assets/img/foodandyou-onepage-4.jpg') }}">
+            </div>
+            <div class="box three">
+                <img src="{{ asset('assets/img/foodandyou-onepage-2.jpg') }}">
+            </div>
+            <div class="box four">
+                <img src="{{ asset('assets/img/foodandyou-onepage-3.jpg') }}">
+            </div>
+        </div>
+
+        <div class="container work-mobile">
+            <div class="row">
+                <div class="col-md-4 col-xs-12 work-mobile--mockup">
+                    <img class="svg" src="{{ asset('assets/img/f&you-onepage-1.svg') }}">
+                </div>
+                <div class="col-md-4 col-xs-12 work-mobile--mockup">
+                    <img class="svg" src="{{ asset('assets/img/f&you-onepage-2.svg') }}">
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <img class="svg" src="{{ asset('assets/img/f&you-onepage-3.svg') }}">
+                </div>
+            </div>
         </div>
 
     </div>

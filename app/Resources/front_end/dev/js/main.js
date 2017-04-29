@@ -37,7 +37,7 @@ $(document).ready(function() {
      */
 
     $(function () {
-        words = ["lettering", "music", "movies", "animals", "meditation"];
+        words = ["lettering", "electro music", "design packagings", "astrophysics", "logo elaboration", "tarantino movies", "animals", "meditation", "vegan food"];
         count = 0;
         setInterval(function () {
             count++;
@@ -78,4 +78,5 @@ $(document).ready(function() {
     $('.nav a').on('click', function(){
         $('.navbar-toggle').click(); //bootstrap 3.x by Richard
     });
+
 });
